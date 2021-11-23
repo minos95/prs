@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+  background-color: cadetblue;
+}
+/*---menu style*/
+
+#top-menu {
+  text-align: center;
+  padding: 20px;
+}
+#down-menu {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 200px;
+}
+
+#button-start-game {
+  width: 290px;
+  font-weight: bold;
+  font-size: 29px;
+  padding: 5px;
+  color: white;
+  background-color: aqua;
+  border-style: none;
+  -webkit-text-stroke: 2px rgb(4, 99, 99);
+}
+#button-exit-game {
+  width: 290px;
+  font-weight: bold;
+  font-size: 29px;
+  padding: 5px;
+  color: white;
+  background-color: brown;
+  border-style: none;
+  -webkit-text-stroke: 2px rgb(124, 33, 33);
+  display: none;
+}
+
+/*---game style---*/
+#game-side {
+  padding: 20px;
+  background-color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: none;
+}
+
+#opponent-side {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+#text-1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#player-side {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+#selected-item {
+  display: none;
+}
+#opponent-side img {
+  visibility: hidden;
+}
+#select-menu {
+  display: flex;
+  justify-content: space-between;
+}
