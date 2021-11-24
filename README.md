@@ -1,6 +1,7 @@
 # The Paper rock scissors game build with javascript
 
-a mini of Paper Rock Scissors game the player should Win the AI player
+> A mini of Paper Rock Scissors game the player should Win the AI player
+
 ![screenshot](./screenshot.png)
 
 ## Build with
