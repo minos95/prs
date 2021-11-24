@@ -43,11 +43,11 @@ body {
 /*---game style---*/
 #game-side {
   padding: 20px;
-  background-color: white;
+  background-image: url("images/set-squid-game-invitation-cards-vinnytsia-ukraine-october-set-squid-game-invitation-cards-symbol-design-vector-231872874.jpg");
+  background-size: cover;
   margin-left: 100px;
   margin-right: 100px;
   display: none;
-  color: rgb(87, 86, 86);
 }
 
 #opponent-side {
@@ -60,6 +60,8 @@ body {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  font-size: 24px;
+  -webkit-text-stroke: 2px white;
 }
 
 #player-side {

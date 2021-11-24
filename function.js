@@ -17,20 +17,25 @@ let player2 = {
   lose: 0,
 };
 
-let gameSide = document.getElementById("game-side");
-let topMenuSide = document.getElementById("top-menu");
-let message = document.getElementById("message");
-let btnStart = document.getElementById("button-start-game");
-let btnExit = document.getElementById("button-exit-game");
-let winLabelPlayer2 = document.querySelector("#opponent-side h4");
-let winLabelPlayer1 = document.querySelector("#player-side h4");
-let roundLabel = document.querySelector("#opponent-side h3");
+let gameSide = document.getElementById("game-side"); //div gameside
+let topMenuSide = document.getElementById("top-menu"); // menu top the logo and text
+let message = document.getElementById("message"); // the message in the game
+let btnStart = document.getElementById("button-start-game"); //the button start of the menu
+let btnExit = document.getElementById("button-exit-game"); //button exit in the game
+let winLabelPlayer2 = document.querySelector("#opponent-side h4"); // the h4 text in the opponent side to render how much win of IA player
+let winLabelPlayer1 = document.querySelector("#player-side h4"); // the win label in the the first player to render how much win
+let roundLabel = document.querySelector("#opponent-side h2"); //round label on the right corner
 let imgLabel = document.getElementById("selected-opponent");
+let textLabelSelected = document.querySelector("#opponent-side div h3");
 let imgSelectedItem = document.getElementById("selected-item");
 let item1 = document.getElementById("item1");
 let item2 = document.getElementById("item1");
 let item = document.getElementById("item1");
+
 function startGame() {
+  roundLabel.textContent = "ROUND " + sumRounds;
+  winLabelPlayer1.textContent = "Win : " + player1.win;
+  winLabelPlayer2.textContent = "Win : " + player2.win;
   goToGame();
 }
 function selectItem(hand) {
@@ -67,6 +72,7 @@ function startRound() {
   imgLabel.src = "images/" + choiceAi + ".png";
   imgLabel.style.visibility = "visible";
   imgSelectedItem.src = "images/" + choice + ".png";
+  textLabelSelected.textContent = choiceAi;
   imgSelectedItem.style.visibility = "visible";
   switch (choice) {
     case "rock":
@@ -118,10 +124,10 @@ function startRound() {
 }
 
 function exitGame() {
+  goToMenu();
   sumRounds = 0;
   resultGame = "false";
   player1.win = player2.win = player1.lose = player2.lose = 0;
-  goToMenu();
 }
 function goToGame() {
   gameSide.style.display = "block";
@@ -141,7 +147,7 @@ function moItem(obj) {
 }
 
 function miItem(obj) {
-  obj.style.backgroundColor = "white";
+  obj.style.background = "none";
 }
 
 function miBtnStart(obj) {

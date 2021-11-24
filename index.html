@@ -6,64 +6,82 @@
   <body>
     <div>
       <div id="top-menu">
-        <img src="images/logo.png" width="300px" height="240px"  />
+        <img src="images/logo.png" width="300px" height="240px" />
         <h1>Click on Start Game</h1>
       </div>
       <div id="game-side">
         <div id="opponent-side">
           <h4>Win <span>0</span></h4>
-          <img id="selected-opponent" src="images/paper.png" width="150" height="150" />
-          <h3>Rounds <span>0</span></h4>
+          <div style="text-align: center">
+            <img
+              id="selected-opponent"
+              src="images/paper.png"
+              width="150"
+              height="150"
+            />
+            <h3></h3>
+          </div>
+
+          <h2>Rounds <span>0</span></h2>
         </div>
         <div id="text-1">
           <h2 id="message">Select an item</h2>
-          <img id="selected-item" src="#" alt="test" width="150" height="150" >
+          <img
+            id="selected-item"
+            src="images/paper"
+            alt="test"
+            width="150"
+            height="150"
+          />
+          <h4></h4>
         </div>
         <div id="player-side">
           <h4>Win <spa>0</spa></h4>
           <div id="select-menu">
-            <div  onmouseover="moItem(this)"
-                   onmouseout="miItem(this)">
-            <img
-              id="item1"
-              src="images/scissor.png"
-              alt=""
-              width="80"
-              height="80"
-              onclick="selectItem('scissor')"
-            />
+            <div onmouseover="moItem(this)" onmouseout="miItem(this)">
+              <img
+                id="item1"
+                src="images/scissor.png"
+                alt=""
+                width="80"
+                height="80"
+                onclick="selectItem('scissor')"
+              />
             </div>
-            <div
-            onmouseover="moItem(this)"
-              onmouseout="miItem(this)">
-            <img
-              id="item2"
-              src="images/rock.png"
-              alt=""
-              width="80"
-              height="80"
-              onclick="selectItem('rock')"
-             
-            />
+            <div onmouseover="moItem(this)" onmouseout="miItem(this)">
+              <img
+                id="item2"
+                src="images/rock.png"
+                alt=""
+                width="80"
+                height="80"
+                onclick="selectItem('rock')"
+              />
             </div>
-            <div onmouseover="moItem(this)"
-              onmouseout="miItem(this)">
-            <img
-              id="item3"
-              src="images/paper.png"
-              alt=""
-              width="80"
-              height="80"
-              onclick="selectItem('paper')"
-            />
+            <div onmouseover="moItem(this)" onmouseout="miItem(this)">
+              <img
+                id="item3"
+                src="images/paper.png"
+                alt=""
+                width="80"
+                height="80"
+                onclick="selectItem('paper')"
+              />
             </div>
           </div>
-          
+
           <h4></h4>
         </div>
       </div>
       <div id="down-menu">
-        <button id="button-start-game" onclick="startGame()" onmouseover="miBtnStart(this)" onmouseout="moBtnStart(this)">Start Game</button>
+        <button
+          id="button-start-game"
+          onclick="startGame()"
+          onmouseover="miBtnStart(this)"
+          onmouseout="moBtnStart(this)"
+        >
+          Start Game
+        </button>
         <button id="button-exit-game" onclick="exitGame()">Exit Game</button>
       </div>
     </div>
