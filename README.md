@@ -5,9 +5,9 @@ a mini of Paper Rock Scissors game the player should Win the AI player
 
 ## Build with
 
--HTML5
--JAVASCRIPT
--CSS
+- HTML5
+- JAVASCRIPT
+- CSS
 
 ## Getting started
 
@@ -15,17 +15,17 @@ to get a local copy up and follow this steps
 
 ### Setup and installl
 
--Clone this repository (click on the code button)
--Go in the Cloned repository and open the HTML file with the Browser
+- Clone this repository (click on the code button)
+- Go in the Cloned repository and open the HTML file with the Browser
 
 ### Play
 
--To play The game Click on start Button
--Choose one of the hand Image there is three choice Paper,Scissor and Rock.
--It's for the Ai player to choose.
--The paper win the rock ,the rock win the scissor,the scissor win the paper.
--To increase the win score you should win the Ai player
--There is endless round till you exit the game.
+- To play The game Click on start Button
+- Choose one of the hand Image there is three choice Paper,Scissor and Rock.
+- It's for the Ai player to choose.
+- The paper win the rock ,the rock win the scissor,the scissor win the paper.
+- To increase the win score you should win the Ai player
+- There is endless round till you exit the game.
 
 ### The idea
 
