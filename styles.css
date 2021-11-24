@@ -3,6 +3,7 @@ body {
   padding: 5px;
   font-weight: bold;
   background-color: cadetblue;
+  font-family: fantasy;
 }
 /*---menu style*/
 
@@ -46,6 +47,7 @@ body {
   margin-left: 100px;
   margin-right: 100px;
   display: none;
+  color: rgb(87, 86, 86);
 }
 
 #opponent-side {
@@ -67,10 +69,10 @@ body {
   margin-bottom: 10px;
 }
 
-#selected-item {
-  display: none;
-}
 #opponent-side img {
+  visibility: hidden;
+}
+#text-1 img {
   visibility: hidden;
 }
 #select-menu {

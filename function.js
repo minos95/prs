@@ -26,6 +26,7 @@ let winLabelPlayer2 = document.querySelector("#opponent-side h4");
 let winLabelPlayer1 = document.querySelector("#player-side h4");
 let roundLabel = document.querySelector("#opponent-side h3");
 let imgLabel = document.getElementById("selected-opponent");
+let imgSelectedItem = document.getElementById("selected-item");
 let item1 = document.getElementById("item1");
 let item2 = document.getElementById("item1");
 let item = document.getElementById("item1");
@@ -65,6 +66,8 @@ function startRound() {
   let choiceAi = opponentSelect();
   imgLabel.src = "images/" + choiceAi + ".png";
   imgLabel.style.visibility = "visible";
+  imgSelectedItem.src = "images/" + choice + ".png";
+  imgSelectedItem.style.visibility = "visible";
   switch (choice) {
     case "rock":
       if (choiceAi == "scissor") {
@@ -139,4 +142,11 @@ function moItem(obj) {
 
 function miItem(obj) {
   obj.style.backgroundColor = "white";
+}
+
+function miBtnStart(obj) {
+  obj.style.backgroundColor = "rgb(1, 163, 163)";
+}
+function moBtnStart(obj) {
+  obj.style.backgroundColor = "aqua";
 }

@@ -6,7 +6,7 @@
   <body>
     <div>
       <div id="top-menu">
-        <img src="images/logo.png" width="300px" height="240px" />
+        <img src="images/logo.png" width="300px" height="240px"  />
         <h1>Click on Start Game</h1>
       </div>
       <div id="game-side">
@@ -17,6 +17,7 @@
         </div>
         <div id="text-1">
           <h2 id="message">Select an item</h2>
+          <img id="selected-item" src="#" alt="test" width="150" height="150" >
         </div>
         <div id="player-side">
           <h4>Win <spa>0</spa></h4>
@@ -57,14 +58,12 @@
             />
             </div>
           </div>
-          <div id="selected-item">
-            <img src="#" width="250" height="250" />
-          </div>
+          
           <h4></h4>
         </div>
       </div>
       <div id="down-menu">
-        <button id="button-start-game" onclick="startGame()">Start Game</button>
+        <button id="button-start-game" onclick="startGame()" onmouseover="miBtnStart(this)" onmouseout="moBtnStart(this)">Start Game</button>
         <button id="button-exit-game" onclick="exitGame()">Exit Game</button>
       </div>
     </div>
