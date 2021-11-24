@@ -34,7 +34,7 @@ function startGame() {
 }
 function selectItem(hand) {
   choice = hand;
-  myMove();
+
   var result = startRound(choice);
 
   if (result == "win") {
@@ -139,21 +139,4 @@ function moItem(obj) {
 
 function miItem(obj) {
   obj.style.backgroundColor = "white";
-}
-
-function myMove() {
-  let id = null;
-  const elem = document.getElementById("item1");
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++;
-      elem.style.bottom = pos + "px";
-      elem.style.left = pos + "px";
-    }
-  }
 }
